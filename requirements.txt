@@ -1,3 +1,4 @@
+gunicorn
 absl-py==0.10.0
 alembic==1.4.3
 apturl==0.5.2
