@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/icon/favicon.ico" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <title>Nour Soubat - Website</title>
+  </head>
+  <body>
+    <div class="bg" style="font-family: 'Times New Roman';">
+
+     <!-- {% include "navbar.html" %} -->
+
+     {% include "index.html" %}
+
+     {% include "profile.html" %}
+
+     {% include "experience.html" %}
+
+     {% include "abilities.html" %}
+
+     {% include "projects.html" %}
+
+     {% include "contacts.html" %}
+
+   </div>
+  </body>
+
+
+</html>
+
+<style media="screen">
+.dark-glass {
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 5px 15px 30px -10px rgb(0, 0, 0);
+  border-radius: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.project-image {
+
+    min-height: 35vh;
+    min-width: 100%;
+
+    height: 100%;
+    width: 100%;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 20px;
+
+    border: solid;
+    border-width: 2px;
+    border-color: #b9c4bc;
+
+    /* center the thingy */
+    /* left: 50%;
+    margin-left: 125px; */
+}
+</style>
